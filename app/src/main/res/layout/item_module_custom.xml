@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <EditText
+        android:id="@+id/editCustomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Başlık (örn: Portfolyom)" />
+    <EditText
+        android:id="@+id/editCustomValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Link veya Metin" />
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="?attr/colorError" />
+</LinearLayout>

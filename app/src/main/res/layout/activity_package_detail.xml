@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profiles.detail.PackageDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            tools:text="İş Profilim" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil İçeriği"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İsim - Soyisim" />
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İsim - Soyisim"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon Numarası" />
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefon Numarası"
+            android:inputType="phone"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+        
+        <Button
+            android:id="@+id/buttonSavePackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Kaydet ve QR Oluştur" />
+    </LinearLayout>
+</ScrollView>

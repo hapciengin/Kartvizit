@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_quick_send"
+        android:icon="@drawable/ic_send"
+        android:title="Hızlı Gönder"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_add_package"
+        android:icon="@drawable/ic_add"
+        android:title="Yeni Paket Ekle"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_change_theme"
+        android:icon="@drawable/ic_color_palette"
+        android:title="Temayı Değiştir"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/theme_light"
+                    android:title="Açık Tema" />
+                <item
+                    android:id="@+id/theme_dark"
+                    android:title="Koyu Tema" />
+                <item
+                    android:id="@+id/theme_system"
+                    android:title="Sistem Varsayılanı" />
+            </group>
+        </menu>
+    </item>
+</menu>
